@@ -3,7 +3,7 @@ resource "aws_s3_bucket" "this" {
 
   tags = var.tags
 }
-
+Get-Child
 resource "aws_s3_bucket_versioning" "versioning" {
   bucket = aws_s3_bucket.this.id
 

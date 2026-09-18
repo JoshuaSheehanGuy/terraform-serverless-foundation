@@ -1,11 +1,64 @@
+# ============================
 # Terraform
-infra/.terraform/
-infra/.terraform.lock.hcl
+# ============================
+**/.terraform/
+**/.terraform.lock.hcl
+**/*.tfstate
+**/*.tfstate.*
+**/crash.log
+**/override.tf
+**/override.tf.json
+**/*_override.tf
+**/*_override.tf.json
+**/.terraformrc
+**/terraform.rc
 
-# Lambda build artifacts
-envs/
-*.zip
+# Terraform provider binaries (the ones that broke your repo)
+**/terraform-provider-*.exe
+**/terraform-provider-*.zip
 
+# ============================
 # Python
+# ============================
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.eggs/
+build/
+dist/
+pip-wheel-metadata/
+*.whl
+
+# Virtual environments
+venv/
+.env/
+.venv/
+env/
+ENV/
+
+# ============================
+# Serverless / Lambda
+# ============================
+*.zip
+package/
+node_modules/
+
+# ============================
+# VS Code
+# ============================
+.vscode/
+.history/
+
+# ============================
+# OS / Editor Junk
+# ============================
+.DS_Store
+Thumbs.db
+
+# ============================
+# Logs
+# ============================
+*.log
+logs/
